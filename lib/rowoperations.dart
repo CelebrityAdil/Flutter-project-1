@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class Rowoperations extends StatelessWidget {
   const Rowoperations({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,39 +11,75 @@ class Rowoperations extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(width: 50, height: 60, color: Colors.red),
-                Container(
-                  width: 50,
-                  height: 50,
-                  color: const Color.fromARGB(255, 30, 154, 207),
-                ),
-                Container(
-                  width: 50,
-                  height: 50,
-                  color: const Color.fromARGB(255, 228, 40, 106),
-                ),
-              ],
-            ),
-            SizedBox(height: 20), // Space between rows
+            // First row → 3 containers with image
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  width: 60,
-                  height: 60,
+                  width: 80,
+                  height: 80,
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 61, 128, 64),
-                    borderRadius: BorderRadius.all(Radius.circular(30)),
+                    shape: BoxShape.circle,
+                    image: const DecorationImage(
+                      image: AssetImage("assets/download11.jpg"),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
-                Container(width: 60, height: 60, color: Colors.orange),
+                Container(
+                  width: 80,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: const DecorationImage(
+                      image: AssetImage("assets/download.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 80,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: const DecorationImage(
+                      image: AssetImage("assets/download11.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
               ],
             ),
-            SizedBox(height: 20), // Space between rows
+
+            const SizedBox(height: 20), // space between rows
+            // Second row → 2 round containers with image
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  width: 90,
+                  height: 90,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      image: AssetImage("assets/download.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 90,
+                  height: 90,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      image: AssetImage("assets/download11.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
