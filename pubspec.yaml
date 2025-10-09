@@ -58,6 +58,7 @@ flutter:
   assets:
     - assets/download.jpg
     - assets/download11.jpg
+    - assets/flutter-logo.png
 
   
   # Uncomment and update the path below if you have a valid image asset

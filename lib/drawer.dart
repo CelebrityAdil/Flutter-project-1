@@ -34,7 +34,7 @@ class _drawerwidgetState extends State<drawerwidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "John Doe",
+                            "Imran Khan",
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 20,
@@ -43,7 +43,7 @@ class _drawerwidgetState extends State<drawerwidget> {
                           ),
                           SizedBox(height: 5),
                           Text(
-                            "abc@gmail.com",
+                            "Imrankhanniazi.com",
                             style: TextStyle(color: Colors.white),
                           ),
                         ],
